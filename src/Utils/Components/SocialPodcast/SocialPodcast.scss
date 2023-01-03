@@ -1,0 +1,10 @@
+.HeroSection__Icons__Items{
+  display: flex;
+  a{
+    margin-right: 16px;
+    transition: transform .2s;
+    &:hover{
+      transform: scale(1.5)
+    }
+  }
+}
