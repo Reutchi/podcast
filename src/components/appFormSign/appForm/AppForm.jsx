@@ -1,13 +1,12 @@
 import '../appForm/appForm.scss'
-import Button from "../../../Utils/Components/Button/button";
 
-const FormSign = ({ Label, Type }) => {
+const FormSign = ({ Label, Type,onChange }) => {
     
     return (
         <>
             <label>
                 {Label}
-                <input type={Type}/>
+                <input type={Type} onChange={onChange}/>
             </label>
         </>
     )

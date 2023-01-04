@@ -1,0 +1,34 @@
+@media only screen and (min-width:0){
+  .form{
+    label {
+      display: block;
+      margin-top: 25px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    input {
+      width: 100%;
+      height: 50px;
+      margin-top: 30px;
+      padding: 5px 15px;
+      background: #191919;
+      border: 1px solid #191919;
+      color: #ffffff;
+      border-radius: 10px;
+      font-size: 22px;
+      &:focus {
+        outline: 1px solid #595959;
+      }
+    }
+    >button{
+      margin-top: 40px;
+    }
+    .error {
+      position: absolute;
+      color: #e53e3e;
+      padding:5px;
+      margin-top: 10px;
+    }
+  }
+
+}

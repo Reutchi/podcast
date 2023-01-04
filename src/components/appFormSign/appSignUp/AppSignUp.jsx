@@ -1,38 +1,47 @@
 import '../appSignUp/appSignUp.scss'
 
-import FormSign from "./appForm/AppForm";
-import Button from "../../Utils/Components/Button/button";
-
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import {useState} from "react";
 
+import FormSign from "../appForm/AppForm";
+import ButtonBlue from "../../../Utils/Components/Button/button"
+import {UserAuth} from "../../../context/AuthContext";
 
 const AppSignUp = () => {
 
-    const [form, setForm] = useState([
-        {label:'Name', type: 'text'},
-        {label:'Email', type: 'email'},
-        {label:'Password', type: 'password'},
-    ])
+    const [email,setEmail] = useState('')
+    const [password,setPassword] = useState('')
+    const [error,setError] = useState('')
 
-  return(
-      <form className='SignUpForm'>
-          <h2 className='SignUpFormTitle'>Create your account</h2>
-          {form.map(({label,type}) => {
-              return(
-                  <FormSign
-                  Label={label}
-                  Type={type}
-                  />
-              )
-          })}
-          <Link to='/signup'>
-              <Button title={"Sign Up"}/>
-          </Link>
-          <Link to='/login'>
-            <Button title={"I have already an account"}/>
-          </Link>
-      </form>
-  )
+    const {createUser} = UserAuth();
+    const navigate = useNavigate();
+
+    const handleSubmit = async (e) => {
+        e.preventDefault()
+        setError('')
+        try{
+            await createUser(email,password)
+            navigate('/')
+        }catch (e){
+            setError(e.message)
+            console.log(e.message)
+        }
+    }
+
+    return(
+        <form className='SignUpForm' onClick={handleSubmit} >
+            <h2 className='SignUpFormTitle'>Create your account</h2>
+            <label>Email</label>
+            <input onChange={(e) => setEmail(e.target.value) } type='email'/>
+            <label>Password</label>
+            <input onChange={(e) => setPassword(e.target.value)} type='password'/>
+            <Link to='/signup'>
+                <ButtonBlue title={"Sign Up"}/>
+            </Link>
+            <Link to='/login'>
+                <ButtonBlue title={"I have already an account"}/>
+            </Link>
+        </form>
+    )
 }
 export  default AppSignUp

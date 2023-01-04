@@ -1,0 +1,51 @@
+@media only screen and (min-width: 0){
+  .AboutHeroSection{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    //padding-top: 260px;
+    .AboutHeroSection__Wrapper{
+      width: 590px;
+      >button{
+        margin: 158px 0 20px 0;
+        cursor: pointer;
+        border: none;
+        background: #118DA8;
+        border-radius: 50%;
+        height: 112px;
+        width: 112px;
+          &:before{
+            content: url('../../Utils/Images/arrow.png');
+          }
+      }
+      >span{
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 27px;
+        color: #118DA8;
+        display: block;
+      }
+      >h2{
+        margin: 25px 0 28px 0;
+        font-weight: 400;
+        font-size: 65px;
+        line-height: 80px;
+        letter-spacing: 3px;
+      }
+      p{
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 33px;
+        color: rgba(255, 255, 255, 0.7);
+      }
+    }
+    .AboutHeroSection__Img__Wrapper{
+      >figure{
+        >img{
+          max-width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+}

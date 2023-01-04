@@ -1,0 +1,53 @@
+.HeaderComponent{
+  @media only screen and (min-width: 0){
+    margin: 0 auto;
+    width: 380px;
+    display: flex;
+    padding-top: 30px;
+}
+  .HeaderComponent__NavItems{
+    .SignUp{
+      margin-top: 13px;
+      margin-left: 13px;
+    }
+    .emailUser{
+      margin: 14px 0 10px 10px;
+      cursor: pointer;
+    }
+    display: none;
+  .HeaderComponent__NavItem{
+      font-size: 17px;
+      line-height: 27px;
+      font-weight: 400;
+      margin-left: 40px;
+      &:hover{
+        color: rgb(17, 141, 168);
+      }
+    }
+  }
+}
+
+.HeaderComponent{
+@media only screen and (min-width: 800px){
+    padding: 43px 43px 50px;
+    width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    .bm-burger-button{
+      display: none;
+    }
+    .HeaderComponent__NavItems{
+      display: flex;
+      .HeaderComponent__NavItem{
+        font-size: 17px;
+        line-height: 27px;
+        font-weight: 400;
+        margin-left: 40px;
+        &:hover{
+          color: rgb(17, 141, 168);
+        }
+      }
+    }
+  }
+}

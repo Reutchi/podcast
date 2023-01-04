@@ -1,0 +1,59 @@
+.HeroSection{
+@media only screen and (min-width: 0){
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .HeroSection__Icons__Wrapper{
+    width: 520px;
+    >div{
+      font-size: 4.375em;
+      font-weight: 400;
+      line-height: 88px;
+      letter-spacing: 3px;
+      >span {
+        font-size: 80px;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .HeroSection__Img{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: all 0.5s ease;
+    margin-left: initial;
+    &:hover{
+      -webkit-filter: grayscale(0%);
+      filter: grayscale(0%);
+    }
+    >img{
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  .HeroSection__Icon__Title{
+    font-size: 15px;
+    line-height: 24px;
+  ;}
+
+  .HeroSection_Wrapper_Podcast{
+    margin-top: 75px;
+  }
+}
+
+.HeroSection{
+  @media only screen and (min-width: 800px){
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+
+
+
+

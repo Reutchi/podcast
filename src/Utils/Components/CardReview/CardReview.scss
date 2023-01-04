@@ -1,0 +1,26 @@
+.Card{
+  background-color: #000000;
+  padding: 50px;
+  border-radius: 32px;
+  width: 423px;
+  height: auto;
+  margin: 16px;
+  .CardReview{
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 43px;
+    margin-top: 20px;
+  }
+  .CardAuthor{
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .CardStars{
+    svg{
+      fill: yellow;
+    }
+  }
+}

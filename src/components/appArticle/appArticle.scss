@@ -1,0 +1,49 @@
+@media only screen and (min-width: 0){
+  .ArticleSection{
+    padding-top: 93px;
+    padding-bottom: 260px;
+    .CardArticles{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .ArticleSection__Wrapper__Title{
+      margin-bottom: 85px;
+      justify-content: space-around;
+      height: 60px;
+      text-align: center;
+    }
+    >button{
+      position: absolute;
+      right: 150px;
+      bottom: 610px;
+    }
+    .ArticleSection__Title{
+      font-size: calc(64px/2);
+      font-weight: 400;
+      margin-left: 15px;
+      letter-spacing: 3px;
+      line-height: 80px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px){
+  .ArticleSection{
+    .CardArticles{
+      width: 1300px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+    }
+    .ArticleSection__Wrapper__Title{
+      display: flex;
+      justify-content: space-around;
+      height: 60px;
+      text-align: initial;
+      .ArticleSection__Title{
+        font-size: calc(32px * 2);
+      }
+    }
+  }
+}

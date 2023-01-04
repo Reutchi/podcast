@@ -1,5 +1,6 @@
 .HeroSection__Icons__Items{
   display: flex;
+  flex-wrap: wrap;
   a{
     margin-right: 16px;
     transition: transform .2s;

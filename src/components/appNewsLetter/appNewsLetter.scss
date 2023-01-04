@@ -1,0 +1,55 @@
+.NewsLetterSection{
+@media only screen and (min-width: 0){
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+.NewsLetterSection__Wrapper{
+  background-color: #000;
+  width: 1300px;
+  border-radius: 32px;
+  height: auto;
+  padding: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.NewsLetterSection__Wrapper__Info{
+  >h3{
+    font-size: calc(72px/2);
+    font-weight: 400;
+    letter-spacing: calc(3px/2);
+    line-height: calc(80px/2);
+    width: calc(417px/2);
+
+  }
+  >span{
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #118DA8;
+  }
+}
+}
+}
+
+.NewsLetterSection{
+  @media only screen and (min-width: 800px){
+    .NewsLetterSection__Wrapper__Info{
+      >h3{
+        font-size: 72px;
+        font-weight: 400;
+        letter-spacing: 3px;
+        line-height: 80px;
+        width: 417px;
+
+      }
+      >span{
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 400;
+        color: #118DA8;
+      }
+    }
+  }
+}
